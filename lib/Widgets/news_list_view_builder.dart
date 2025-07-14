@@ -13,10 +13,11 @@ class NewsListViewBuilder extends StatefulWidget {
 }
 
 class _NewsListViewBuilderState extends State<NewsListViewBuilder> {
-  var future;
+  late Future<List<ArticleModel>> future;
+
   @override
   void initState() {
-    // TODO: implement initState
+    
     super.initState();
     future = NewsServices(Dio()).getNews(category: widget.category);
   }

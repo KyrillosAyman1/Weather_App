@@ -82,10 +82,11 @@ class _NewsTileState extends State<NewsTile> {
                     children: [
                       Expanded(
                         child: Text(
-                          widget.articleModel.published ?? "",
+                          "${widget.articleModel.published.year}-${widget.articleModel.published.month}-${widget.articleModel.published.day}",
                           style: TextStyle(
                             color: Color.fromARGB(255, 39, 39, 39),
-                            fontSize: 10,
+                            fontSize: 12,
+                            
                           ),
                         ),
                       ),

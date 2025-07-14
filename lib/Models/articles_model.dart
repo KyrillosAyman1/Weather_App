@@ -2,7 +2,7 @@ class ArticleModel {
   final String? image;
   final String title;
   final String? subtitle;
-  final String? published;
+  final DateTime published;
   final String? source;
   final String content;
   final String url;
@@ -25,7 +25,7 @@ class ArticleModel {
       image: json["image"],
       title: json["title"],
       subtitle: json["description"],
-      published: json["publishedAt"],
+      published: DateTime.parse(json["publishedAt"]) ,
       source: json["source"]["name"],
       content: json["content"],
       url: json["url"],

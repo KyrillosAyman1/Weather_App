@@ -70,7 +70,7 @@ class _ArticleItemState extends State<ArticleItem> {
           ),
           Center(
             child: Text(
-              widget.articleModel.published ?? "",
+        "${widget.articleModel.published.year}-${widget.articleModel.published.month}-${widget.articleModel.published.day}",
               style: TextStyle(
                 color: Color.fromARGB(255, 39, 39, 39),
                 fontSize: 18,
