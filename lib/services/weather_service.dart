@@ -6,7 +6,7 @@ import 'package:weather_app/models/weather_model.dart';
 class WeatherService {
   final Dio dio;
   final String apiKey = "dbe28a8e1c0f4950b40105509232009";
-  final String baseUrl = "http://api.weatherapi.com/v1";
+  final String baseUrl = "https://api.weatherapi.com/v1";
   WeatherService(this.dio);
 
   Future<(WeatherModel, List<WeatherDaysModel>)> getCurrentWeather(
