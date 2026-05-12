@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:news_app/Widgets/news_list_view_builder.dart';
 
 class CategoryView extends StatelessWidget {
-  const CategoryView({super.key, required this.category, required this.categoryTitle});
+  const CategoryView({super.key, required this.category});
   final String category;
-  final String categoryTitle;
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +51,7 @@ class CategoryView extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(10),
         child: CustomScrollView(
-          slivers: [NewsListViewBuilder(category: category)],
+          slivers: [NewsListViewBuilder(category: category.toLowerCase())],
         ),
       ),
     );
