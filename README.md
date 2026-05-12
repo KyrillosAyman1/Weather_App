@@ -81,12 +81,6 @@ I built this app to strengthen my skills in Flutter development, especially work
 
 ---
 
-# 🎬 Demo
-
-Video demo available below 👇
-
----
-
 # 👨‍💻 Developer
 
 ## Kyrillos Ayman
